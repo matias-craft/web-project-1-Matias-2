@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Overview of Solo Leveling</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Questions?</a></li>
+        </ul>
+      </nav>
+    </header>
+    <fieldset>
+      <form action="submit_form.php" method="post">
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="question"
+          >which one of the characters is your favorite?</label
+        ><br />
+        <input
+          type="radio"
+          id="jin-woo"
+          name="character"
+          value="Sung Jin-Woo"
+          required />
+        <label for="jin-woo"><i>Sung Jin-Woo</i></label
+        ><br />
+        <input type="radio" id="hae-in" name="character" value="Cha Hae-In" />
+        <label for="hae-in"></i>Cha Hae-In</i></label><br />
+        <input
+          type="radio"
+          id="go-gun-hee"
+          name="character"
+          value="Go Gun-Hee" />
+        <label for="go-gun-hee">Go Gun-Hee</label><br /><br />
+        <label for="answer">Why</label><br />
+        <textarea
+          id="answer"
+          name="answer"
+          rows="4"
+          cols="50"
+          required></textarea
+        ><br /><br />
+        <input type="submit" value="Submit" />
+      </form>
+    </fieldset>
+  </body>
+</html>
