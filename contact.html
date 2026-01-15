@@ -17,31 +17,47 @@
       </nav>
     </header>
     <fieldset>
-      <form action="submit_form.php" method="post">
+      <!--this is the contact form-->
+      <form action="submit_form.php" method="get">
+        <!--this label is for the name input-->
         <label for="name">Name:</label><br />
+        <!-- this is the name input-->
         <input type="text" id="name" name="name" required /><br /><br />
+        <!-- this label is for the email input-->
         <label for="email">Email:</label><br />
+        <!-- this is the email input-->
         <input type="email" id="email" name="email" required /><br /><br />
+        <!-- this label is for the question input-->
         <label for="question"
           >which one of the characters is your favorite?</label
         ><br />
+        <!-- this is the character input for sung jin-woo-->
         <input
           type="radio"
           id="jin-woo"
           name="character"
           value="Sung Jin-Woo"
           required />
+        <!--this is the label for sung jin-woo-->
         <label for="jin-woo"><i>Sung Jin-Woo</i></label
         ><br />
+        <!-- this is the character input for cha hae-in-->
         <input type="radio" id="hae-in" name="character" value="Cha Hae-In" />
-        <label for="hae-in"></i>Cha Hae-In</i></label><br />
+        <!--this is the label for cha hae-in-->
+        <label for="hae-in"><i>Cha Hae-In</i></label
+        ><br />
+        <!-- this is the character input for go gun-hee-->
         <input
           type="radio"
           id="go-gun-hee"
           name="character"
           value="Go Gun-Hee" />
-        <label for="go-gun-hee">Go Gun-Hee</label><br /><br />
+        <!--this is the label for go gun-hee-->
+        <label for="go-gun-hee"><i>Go Gun-Hee</i></label
+        ><br /><br />
+        <!-- this is the label for the answer input-->
         <label for="answer">Why</label><br />
+        <!-- this is the answer input-->
         <textarea
           id="answer"
           name="answer"
@@ -49,6 +65,7 @@
           cols="50"
           required></textarea
         ><br /><br />
+        <!-- this is the submit button -->
         <input type="submit" value="Submit" />
       </form>
     </fieldset>
